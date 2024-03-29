@@ -31,9 +31,6 @@ cc_library {
     product_available: true,
     ramdisk_available: true,
     vendor_ramdisk_available: true,
-    vndk: {
-        enabled: true,
-    },
     host_supported: true,
     // TODO(b/153609531): remove when no longer needed.
     native_bridge_supported: true,
