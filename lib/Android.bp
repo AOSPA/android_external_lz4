@@ -24,15 +24,13 @@ cc_library {
         "com.android.adbd",
         "com.android.art", // from libartbase
         "com.android.art.debug",
+        "com.android.virt",
     ],
     recovery_available: true,
     vendor_available: true,
     product_available: true,
     ramdisk_available: true,
     vendor_ramdisk_available: true,
-    vndk: {
-        enabled: true,
-    },
     host_supported: true,
     // TODO(b/153609531): remove when no longer needed.
     native_bridge_supported: true,
