@@ -18,12 +18,17 @@ license {
 cc_binary_host {
     name: "lz4",
     srcs: [
-        "datagen.c",
         "bench.c",
         "lz4io.c",
         "lz4cli.c",
+        "timefn.c",
+        "threadpool.c",
+        "lorem.c",
     ],
-    cflags: ["-Wall", "-Werror"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
     static_libs: ["liblz4"],
     stl: "libc++_static",
 }
@@ -36,10 +41,12 @@ cc_binary_host {
         "-Werror",
     ],
     srcs: [
-        "datagen.c",
         "bench.c",
         "lz4io.c",
         "lz4cli.c",
+        "timefn.c",
+        "threadpool.c",
+        "lorem.c",
     ],
     static_libs: ["liblz4"],
     stl: "libc++_static",
